@@ -19,10 +19,6 @@ class Config:
         DATABASE_URI = DATABASE_URI.replace("postgres://", "postgresql://", 1)
     app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URI
 
-    # 設置連接數據庫的URL
-    # SQLALCHEMY_DATABASE_URI = 'postgresql://admin:1234@localhost:5432/202210scanner-robot'
-    # DATABASE_URI = 'postgresql://admin:1234@localhost:5432/202210scanner-robot'
-
     # 設置每次請求结束後自動提出數據庫的改動
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
 

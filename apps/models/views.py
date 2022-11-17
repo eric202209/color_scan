@@ -2,7 +2,7 @@ from flask import Blueprint
 
 user_blueprint = Blueprint('user', __name__, url_prefix="/user")
 
-# 使用蓝图对象进行路由映射
+# 使用藍圖進行映射
 @user_blueprint.route("/", endpoint="index")
 def index():
     return "index"
